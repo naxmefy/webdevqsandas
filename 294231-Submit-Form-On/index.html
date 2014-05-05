@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="/zebra_datepicker/css/default.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/zebra_datepicker/javascript/zebra_datepicker.js"></script>
+  <script type="text/javascript">
+  $(function() {
+      $('#event_date').Zebra_DatePicker( {
+          onSelect: function(date) {
+              alert(date);
+          },
+          selectWeek: true,
+          inline: true,
+          startDate: '01/01/2000',
+          firstDay: 1
+      });
+  });
+  </script>
+  <style>
+    #ui-datepicker-div {}
+    .ui-datepicker-trigger {  vertical-align: middle;}
+  </style>
+  </head>
+
+  <body>
+      <div id='shift_layout' class='form2'>
+      <table class='shift_layout' border='1'><tbody>
+
+    <form id="frmDate" action="test2.html" method="POST">
+
+                  <tr>
+                  <td>
+                  <label>Period :
+                  <span class='small2'>Date to update / edit</span>
+                  </label>
+                  </td>
+          
+          
+                  <td>      
+                <input id='event_date' type='text' name='event_date' onselect="$('#frmDate').submit()";>
+                  </td>
+                  </tr>
+                  
+    </form>                
+    </tbody></table>      
+              
+  </body>
+</html>
