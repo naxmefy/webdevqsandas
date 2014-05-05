@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example Solution?</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <!-- jQuery -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li><a href="#one" data-toggle="tab">Form One</a></li>
+    <li><a href="#two" data-toggle="tab">Form Two</a></li>
+    <li><a href="#three" data-toggle="tab">Form Three</a></li>
+    <li><a href="#four" data-toggle="tab">Form Four</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane" id="one">
+      <form action="#one"><input type="submit"></form>
+    </div>
+    <div class="tab-pane" id="two">
+      <form action="#two"><input type="submit"></form>
+    </div>
+    <div class="tab-pane" id="three">
+      <form action="#three"><input type="submit"></form>
+    </div>
+    <div class="tab-pane" id="four">
+      <form action="#four"><input type="submit"></form>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('a[href="' + window.location.hash + '"]').click();
+    });
+  </script>
+</body>
+</html>
