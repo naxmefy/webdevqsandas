@@ -15,29 +15,40 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#one" data-toggle="tab">Form One</a></li>
-    <li><a href="#two" data-toggle="tab">Form Two</a></li>
-    <li><a href="#three" data-toggle="tab">Form Three</a></li>
-    <li><a href="#four" data-toggle="tab">Form Four</a></li>
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="page-header">
+        <h1>Example 1 <small>Question: <a href="http://www.webdeveloper.com/forum/showthread.php?294185-Mutiple-Forms-and">http://www.webdeveloper.com/forum/showthread.php?294185-Mutiple-Forms-and</a></small></h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#one" data-toggle="tab">Form One</a></li>
+        <li><a href="#two" data-toggle="tab">Form Two</a></li>
+        <li><a href="#three" data-toggle="tab">Form Three</a></li>
+        <li><a href="#four" data-toggle="tab">Form Four</a></li>
+      </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div class="tab-pane active" id="one">
-      <form action="#one"><input type="submit"></form>
-    </div>
-    <div class="tab-pane" id="two">
-      <form action="#two"><input type="submit"></form>
-    </div>
-    <div class="tab-pane" id="three">
-      <form action="#three"><input type="submit"></form>
-    </div>
-    <div class="tab-pane" id="four">
-      <form action="#four"><input type="submit"></form>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="one">
+          <form action="#one"><input type="submit"></form>
+        </div>
+        <div class="tab-pane" id="two">
+          <form action="#two"><input type="submit"></form>
+        </div>
+        <div class="tab-pane" id="three">
+          <form action="#three"><input type="submit"></form>
+        </div>
+        <div class="tab-pane" id="four">
+          <form action="#four"><input type="submit"></form>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <script>
     $(document).ready(function(){
